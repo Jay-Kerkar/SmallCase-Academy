@@ -19,23 +19,17 @@ const CourseDetails = ({ navigation, route }) => {
                         resizeMode="contain"
                     />
                 </View>
-
                 <Text style={styles.mainHeader}>{selectedCourse.title}</Text>
-
                 <Text style={styles.description}>{selectedCourse.description}</Text>
-
                 <Text style={[styles.description, styles.subCourse]}>
                     {selectedCourse.utility[0].name}
                 </Text>
-
                 <Text style={[styles.description, styles.subCourse]}>
                     {selectedCourse.utility[1].name}
                 </Text>
-
                 <Text style={[styles.description, styles.subCourse]}>
                     {selectedCourse.utility[2].name}
                 </Text>
-
                 <View style={styles.buttonContainer}>
                     <Text style={styles.price}> {selectedCourse.price} </Text>
                     <TouchableOpacity
@@ -63,14 +57,14 @@ const styles = StyleSheet.create({
         shadowOpacity: 0.5,
         shadowRadius: 8,
         elevation: 8,
-        marginVertical: 30,
+        marginVertical: 12,
     },
 
     cardImage: {
         width: "100%",
         display: "flex",
         alignSelf: "center",
-        height: undefined,
+        height: 150,
         aspectRatio: 1,
     },
 
@@ -94,7 +88,6 @@ const styles = StyleSheet.create({
     },
 
     description: {
-        textAlign: "center",
         fontSize: 16,
         color: "#7d7d7d",
         paddingBottom: 20,
@@ -103,6 +96,7 @@ const styles = StyleSheet.create({
     subCourse: {
         textTransform: "uppercase",
         color: "#344055",
+        textAlign: "center",
     },
 
     buttonContainer: {

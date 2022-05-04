@@ -12,7 +12,7 @@ const Home = () => {
             <View style={styles.header}>
                 <Image style={styles.banner} resizeMode="contain" source={require("../../assets/banner.png")} />
                 <Text style={styles.heading}>{heading1}</Text>
-                <Text style={[styles.heading, { fontSize: 33, color: "#4c5dab", marginTop: 0 }]}>{heading2}</Text>
+                <Text style={[styles.heading, { fontSize: 25, color: "#4c5dab", marginTop: 0 }]}>{heading2}</Text>
                 <Text style={styles.description}>{description}</Text>
             </View>
             <View style={styles.navbar}>
@@ -48,7 +48,7 @@ const styles = StyleSheet.create({
         borderRadius: 20
     },
     heading: {
-        fontSize: 25,
+        fontSize: 20,
         color: "#344055",
         textTransform: "uppercase"
     },
@@ -59,9 +59,6 @@ const styles = StyleSheet.create({
         marginTop: 30,
         paddingBottom: 50,
         lineHeight: 26
-    },
-    navbar: {
-
     },
     line: {
         marginBottom: 10,

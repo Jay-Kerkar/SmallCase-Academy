@@ -8,7 +8,7 @@ const Course = ({ navigation }) => {
             <View style={styles.container}>
                 <View style={styles.course}>
                     <View style={styles.imageContainer}>
-                        <Image style={styles.image} source={{ uri: `${item.image}` }} resizeMode="contain" />
+                        <Image style={styles.image} source={item.image} resizeMode="contain" />
                     </View>
                     <Text style={styles.title}>
                         {item.title}
