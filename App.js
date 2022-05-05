@@ -8,7 +8,6 @@ import CourseDetails from './source/screens/CourseDetails'
 
 export default function App() {
   const Stack = createNativeStackNavigator()
-
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="Home">

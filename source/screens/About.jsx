@@ -15,13 +15,13 @@ const About = () => {
             </View>
             <Text style={[styles.header, { paddingBottom: 10 }]}>Follow Me On Social Newtwork</Text>
             <View style={styles.menu}>
-                <TouchableOpacity onPress={() => Linking.openURL("")} style={styles.button}>
+                <TouchableOpacity onPress={() => Linking.openURL("https://www.instagram.com/")} style={styles.button}>
                     <Image style={styles.socialIcons} source={{ uri: "https://parentzone.org.uk/sites/default/files/Instagram%20logo_0.jpg" }} />
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => Linking.openURL("")} style={styles.button}>
+                <TouchableOpacity onPress={() => Linking.openURL("https://www.facebook.com/")} style={styles.button}>
                     <Image style={styles.socialIcons} source={{ uri: "https://cdn.shopify.com/app-store/listing_images/21d07b9a03ab6e538a053381def7b15d/icon/CJnzrtj0lu8CEAE=.jpg" }} />
                 </TouchableOpacity>
-                <TouchableOpacity onPress={() => Linking.openURL("")} style={styles.button}>
+                <TouchableOpacity onPress={() => Linking.openURL("https://www.twitter.com/")} style={styles.button}>
                     <Image style={styles.socialIcons} source={{ uri: "https://pbs.twimg.com/profile_images/378800000041711687/d6050eb6ce3f141847fe200a914205bc_400x400.png" }} />
                 </TouchableOpacity>
             </View>
